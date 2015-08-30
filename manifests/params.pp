@@ -8,6 +8,7 @@ class pulp::params {
     $os_maj_release = $os_versions[0]
   }
   $manage_repo = true
+  $install_qpidd = false
   $pulp_stable_repo_2_baseurl = "https://repos.fedorapeople.org/repos/pulp/pulp/stable/2/${::os_maj_release}/${::architecture}/"
   $pulp__stable_repo_2_gpgkey = "https://repos.fedorapeople.org/repos/pulp/pulp/GPG-RPM-KEY-pulp-2"
   $pulp_stable_repo_2_gpgcheck = '1'

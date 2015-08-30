@@ -6,7 +6,12 @@ class pulp::install {
     enabled  => $pulp::pulp_enabled,
     gpgcheck => $pulp::pulp_gpgcheck,
   }
-  package { $pulp::package_list:
+  if $pulp::install_qpidd == true {
+    package { ['qpid-cpp-server', 'qpid-cpp-server-store']:
+      ensure => present
+    }
+  }
+  package { $pulp::pulp_package_list:
     ensure => present,
   }
 }
