@@ -1,4 +1,5 @@
-# pulp
+[![Build
+Status](https://secure.travis-ci.org/chriscowley/chriscowley-pulp.png)](http://travis-ci.org/chriscowley/chriscowley-pulp)
 
 #### Table of Contents
 
