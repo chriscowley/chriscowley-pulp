@@ -7,9 +7,9 @@ class pulp::params {
     $os_versions    = split($::operatingsystemrelease, '[.]')
     $os_maj_release = $os_versions[0]
   }
-  $manage_repo = true,
-  $pulp_baseurl = "https://repos.fedorapeople.org/repos/pulp/pulp/stable/2/${::os_maj_release}/${::architecture}/",
-  $pulp_gpgkey = "https://repos.fedorapeople.org/repos/pulp/pulp/GPG-RPM-KEY-pulp-2",
-  $pulp_gpgcheck = '1',
-  $pulp_enabled = '1',
+  $manage_repo = true
+  $pulp_stable_repo_2_baseurl = "https://repos.fedorapeople.org/repos/pulp/pulp/stable/2/${::os_maj_release}/${::architecture}/"
+  $pulp__stable_repo_2_gpgkey = "https://repos.fedorapeople.org/repos/pulp/pulp/GPG-RPM-KEY-pulp-2"
+  $pulp_stable_repo_2_gpgcheck = '1'
+  $pulp_stable_repo_2_enabled = '1'
 }
