@@ -12,4 +12,14 @@ class pulp::params {
   $pulp__stable_repo_2_gpgkey = "https://repos.fedorapeople.org/repos/pulp/pulp/GPG-RPM-KEY-pulp-2"
   $pulp_stable_repo_2_gpgcheck = '1'
   $pulp_stable_repo_2_enabled = '1'
+
+  $pulp_package_list = [ 
+    'pulp-puppet-plugins',
+    'pulp-rpm-plugins',
+    'pulp-selinux',
+    'pulp-server',
+    'python-gofer-qpid',
+    'python-qpid',
+    'python-qpid-qmf'
+  ]
 }
